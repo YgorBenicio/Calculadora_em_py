@@ -1,5 +1,5 @@
 def calculadora(num1, num2, operacao):
-    # Verifica qual operação foi escolhida e realiza o cálculo
+    # Faz a operação escolhida
     if operacao == "soma":
         return num1 + num2
     elif operacao == "sub":
@@ -17,15 +17,13 @@ def calculadora(num1, num2, operacao):
 def main():
     print("Bem-vindo à Calculadora!")
     
-    # Solicita ao usuário os números e a operação
+    # Pede os números e a operação
     num1 = float(input("Digite o primeiro número: "))
     num2 = float(input("Digite o segundo número: "))
     operacao = input("Digite a operação (soma, sub, mult, div): ").lower()
 
-    # Chama a função calculadora e exibe o resultado
+    # Mostra o resultado
     resultado = calculadora(num1, num2, operacao)
     print("O resultado da operação é:", resultado)
 
-# Verifica se o script está sendo executado diretamente
-if __name__ == "__main__":
-    main()
+main()
